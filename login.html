@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+		<div class="top-bar">
+			<div class="dropdown">
+				<button class="dropbtn">Menu</button>
+				<div class="dropdown-content">
+					<a href="index.php">Home</a>
+					<a href="scoreboard.html">Leaderboard</a>
+					<a href="about.html">About</a>
+					<a href="contact.html">Contact</a>
+				</div>
+			</div>
+			<div class="page-name">Log In</div>
+		</div>
+	</header>
+    <main>
+        <form id="loginForm" action="php/login.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+			<br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+			<br>
+            <button type="submit">Log In</button>
+        </form>
+		<br>
+        <p>Don't have an account? <a href="signup.html" class="button">Sign up!</a></p>
+    </main>
+</body>
+</html>
